@@ -29,3 +29,5 @@ docker rm <container name>
 docker stop <container name>
 docker diff <container name>
 
+docker exec -it <container name> /bin/bash
+
