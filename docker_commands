@@ -1,0 +1,23 @@
+
+
+
+
+
+
+-----  sudo yum install docker -y 
+
+-----  sudo systemctl restart docker
+----- sudo docker images -> images present in the docker daemon
+----- sudo docker pull httpd  -->download image from the docker registry or docker hub
+------ docker info --> details regarding docker deamon
+------ sudo docker run httpd  --> this do two thing downloads the image and makes container out of it
+------- sudo docker ps ---> shows running containers
+------ sudo docker ps -a ---> shows all running and stopped containers
+-----   sudo docker run -d httpd ---> detached mode (job will be start but you will not be inside it)
+----- ps -ef ---> to see all running processes in linux
+---- sudo docker run -it centos ---> This will download image from dockerhub, run it and open the container's command line interface
+						-it  --->  interactive mode of container(bash will open (command line interface))
+						
+-----free -m ---> shows how much memory used
+
+
