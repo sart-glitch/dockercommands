@@ -21,3 +21,11 @@
 -----free -m ---> shows how much memory used
 
 
+docker search jenkins  ---> search images in docker hub
+docker run -it --name don ubuntu /bin/bash   -----pull+start+run
+docker attach <container name>  ---> open cli
+docker start <container name>
+docker rm <container name>
+docker stop <container name>
+docker diff <container name>
+
