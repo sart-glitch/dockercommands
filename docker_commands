@@ -31,3 +31,7 @@ docker diff <container name>
 
 docker exec -it <container name> /bin/bash
 
+docker rmi jenkins/jenkins:lts(image name or image id)
+
+docker inspect don (container name and container id`)
+
