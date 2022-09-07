@@ -37,3 +37,5 @@ docker inspect don (container name and container id`)
 
 ctrl + pq ----> get out of the container's terminal without stopping the container
 
+docker run -it --name <CONTAINER NAME> <IMAGE NAME>
+
