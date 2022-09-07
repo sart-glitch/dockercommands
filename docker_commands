@@ -35,3 +35,5 @@ docker rmi jenkins/jenkins:lts(image name or image id)
 
 docker inspect don (container name and container id`)
 
+ctrl + pq ----> get out of the container's terminal without stopping the container
+
