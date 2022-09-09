@@ -1,0 +1,29 @@
+
+Completing the previous steps enables you to download and install Jenkins on AWS. To download and install Jenkins:
+
+Ensure that your software packages are up to date on your instance by uing the following command to perform a quick software update:
+
+1---------------->[ec2-user ~]$ sudo yum update –y
+Add the Jenkins repo using the following command:
+
+2--------->[ec2-user ~]$  sudo wget -O /etc/yum.repos.d/jenkins.repo \
+                                           https://pkg.jenkins.io/redhat-stable/jenkins.repo
+Import a key file from Jenkins-CI to enable installation from the package:
+
+3--------->[ec2-user ~]$ sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+4---->[ec2-user ~]$ sudo yum upgrade
+Install Java:
+
+5----->[ec2-user ~]$ sudo amazon-linux-extras install java-openjdk11 -y
+Install Jenkins:
+
+6----------->[ec2-user ~]$ sudo yum install jenkins -y
+Enable the Jenkins service to start at boot:
+
+7--------->[ec2-user ~]$ sudo systemctl enable jenkins
+Start Jenkins as a service:
+
+8------->[ec2-user ~]$ sudo systemctl start jenkins
+You can check the status of the Jenkins service using the command:
+
+9-------->[ec2-user ~]$ sudo systemctl status jenkins
