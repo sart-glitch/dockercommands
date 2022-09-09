@@ -39,3 +39,7 @@ ctrl + pq ----> get out of the container's terminal without stopping the contain
 
 docker run -it --name <CONTAINER NAME> <IMAGE NAME>
 
+cat /etc/os-release ----> os details
+
+df -kh ---> harddisk details
+
