@@ -27,3 +27,11 @@ Start Jenkins as a service:
 You can check the status of the Jenkins service using the command:
 
 9-------->[ec2-user ~]$ sudo systemctl status jenkins
+
+10 --->  yum install java-1.8.0 -y
+
+
+ 11 ----> sudo update-alternatives --config java   ---------> shows all java versions
+
+12 ---> sudo vi .mavenrc(create inside user folder)
+	export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/
