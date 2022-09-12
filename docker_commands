@@ -14,6 +14,7 @@
 ------- sudo docker ps ---> shows running containers
 ------ sudo docker ps -a ---> shows all running and stopped containers
 -----   sudo docker run -d httpd ---> detached mode (job will be start but you will not be inside it)
+-----exit ---> stop and comeout
 ----- ps -ef ---> to see all running processes in linux
 ---- sudo docker run -it centos ---> This will download image from dockerhub, run it and open the container's command line interface
 						-it  --->  interactive mode of container(bash will open (command line interface))
