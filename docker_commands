@@ -44,3 +44,17 @@ cat /etc/os-release ----> os details
 
 df -kh ---> harddisk details
 
+sudo docker logs -f 1ab57637bef2  --->  logs of tomcat or httpd server
+
+sudo docker exec 20d56e4beee3 touch file1 file2  --------> create files inside container
+sudo docker exec 20d56e4beee3 ls   --------->
+
+ sudo docker cp sarthfile 20d56e4beee3:/tmp    -----> copy from local system to container
+ sudo docker exec 20d56e4beee3 ls /tmp     ----->
+ 
+ sudo docker run -it -e idream=devops centos /bin/bash    ----> environment variable setup
+ 
+ sudo docker run -it -w /tmp centos /bin/bash    -----> set default directory
+ 
+ 
+
