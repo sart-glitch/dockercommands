@@ -1,0 +1,16 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: "my resource"
+Resources:
+  S3Bucket22:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: sarthak-8569
+  S3Bucket23:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: sarthak-8566
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-08e2d37b6a0129927
+      InstanceType: t2.micro
