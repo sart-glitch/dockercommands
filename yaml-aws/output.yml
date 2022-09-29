@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "create s3 bucket"
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: idream-cf-demo1
+  S3Bucket1:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: idream-cf-demo11
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-064687fa05edcd686
+      InstanceType: t2.micro
+Outputs:
+  BucketName:
+    Value: !Ref 'S3Bucket'
+  BucketName1:
+    Value: !Ref 'S3Bucket1'
+  InstanceName:
+    Value: !Ref 'MyInstance'
