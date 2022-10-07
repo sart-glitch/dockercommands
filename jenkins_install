@@ -28,7 +28,7 @@ You can check the status of the Jenkins service using the command:
 
 9-------->[ec2-user ~]$ sudo systemctl status jenkins
 
-10 --->  yum install java-1.8.0 -y
+10 --->  sudo yum install java-1.8.0 -y
 
 11---->  sudo yum install git maven -y
 
