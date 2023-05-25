@@ -1,4 +1,12 @@
-
+sudo wget -O /etc/yum.repos.d/jenkins.repo \
+    https://pkg.jenkins.io/redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
+sudo dnf upgrade
+# Add required dependencies for the jenkins package
+sudo dnf install java-11-openjdk
+sudo dnf install jenkins
+sudo systemctl daemon-reload
+--------------------------
 Completing the previous steps enables you to download and install Jenkins on AWS. To download and install Jenkins:
 
 Ensure that your software packages are up to date on your instance by uing the following command to perform a quick software update:
